@@ -94,13 +94,13 @@ const stories = [
 ];
 const Story = ({ storyImage, userImage, userName }) => {
   return (
-    <a href="#" className="story">
+    <a href="#t" className="story">
       <div className="story-image">
         <img src={storyImage} alt={userName} />
       </div>
 
       <div className="user">
-        <img src={userImage} />
+        <img src={userImage} alt="photo" />
         <span>{userName}</span>
       </div>
     </a>
