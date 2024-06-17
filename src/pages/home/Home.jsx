@@ -159,7 +159,7 @@ const News = ({
 };
 
 const UserInfo = ({ id, setChatBox }) => {
-  const friend = friends.find((ele) => ele.id == id);
+  const friend = friends.find((ele) => ele.id === id);
 
   return (
     <div className="user-info">

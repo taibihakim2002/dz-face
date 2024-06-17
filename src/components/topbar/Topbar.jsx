@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import "./topbar.css";
 import {
-  AccountBox,
   AccountCircle,
-  ArrowDropDown,
   Logout,
   Menu,
   Message,
