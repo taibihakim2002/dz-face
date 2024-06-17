@@ -1,0 +1,99 @@
+.homeside-container {
+  position: fixed;
+  width: 300px;
+  background-color: white;
+  height: 100%;
+  left: 0;
+  top: 60px;
+  z-index: 11;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .homeside-container {
+    display: block;
+  }
+}
+.homeside-container .search {
+  justify-content: space-between;
+  gap: 5px;
+  background-color: white;
+  padding: 5px 10px;
+  display: flex;
+  border: 1px var(--eee-color) solid;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.homeside-container .search input {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  width: 100%;
+}
+
+.homeside-container .search input:focus {
+  border: none;
+  outline: none;
+}
+.friends {
+  padding: 20px;
+}
+
+.friends .friends-header {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ccc-color);
+  margin-bottom: 25px;
+  display: block;
+}
+.friend-item-container {
+  width: 100%;
+  display: block;
+}
+.friend-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+  color: var(--ccc-color);
+  position: relative;
+  transition: 0.3s;
+}
+.friend-item:hover {
+  transform: translateX(2px);
+}
+.friend-item .friend {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  color: black;
+}
+.friend-item .friend span {
+  display: block;
+}
+
+.friend-item .friend img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.friend-item .state {
+  text-align: center;
+  font-size: 12px;
+  color: var(--ccc-color);
+  padding: 0px 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.friend-item .active-user {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}

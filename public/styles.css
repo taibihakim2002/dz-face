@@ -1,0 +1,33 @@
+/* CSS Variables */
+:root {
+  --ccc-color: #999898;
+  --main-color: #008cff;
+  --eee-color: #eee;
+}
+
+ul li {
+  list-style-type: none;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+.hidden {
+  display: none;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: unset;
+  cursor: pointer;
+}
+button:focus {
+  border: none;
+  outline: none;
+}

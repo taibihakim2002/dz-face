@@ -1,0 +1,252 @@
+.home {
+  background-color: #f5f5f5;
+  width: 100%;
+  min-height: calc(100vh - 65px);
+  position: relative;
+  padding: 10px 0;
+}
+@media (min-width: 992px) {
+  .home {
+    padding-right: 250px;
+  }
+}
+.main {
+  padding-left: 10px;
+}
+@media (min-width: 992px) {
+  .main {
+    padding-left: 300px;
+  }
+}
+.stories {
+  padding-top: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+.stories-list {
+  display: flex;
+  gap: 10px;
+}
+
+.stories-header,
+.posts-header {
+  margin-bottom: 15px;
+}
+.story {
+  width: 100px;
+  height: 140px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.story .story-image {
+  width: 100%;
+  height: 100%;
+}
+.story .story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.story .story-image img:hover {
+  transform: scale(1.1);
+}
+.story .user {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  bottom: 3px;
+  width: 100%;
+  text-align: center;
+}
+.story .user img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.story .user span {
+  display: block;
+  font-size: 9px;
+  color: white;
+}
+
+.posts {
+  padding-top: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 772px) {
+  .news-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.news {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.news:hover .cover img {
+  transform: scale(1.1);
+}
+.news .cover {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.news .cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.news .info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.news .info .user {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.news .info .user img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.news .info .stats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.news .info .stats .likes,
+.news .info .stats .comments {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.news .info .stats .likes span,
+.news .info .stats .comments span {
+  font-weight: bold;
+}
+
+.news .info .stats .icon {
+  display: flex;
+  justify-content: center;
+  color: var(--ccc-color);
+}
+.news .info .stats .icon:hover {
+  color: #606060;
+}
+.news .hashtags {
+  color: rgb(62, 84, 208);
+}
+.liked {
+  color: red !important;
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 0;
+  left: 315px;
+  background-color: white;
+  z-index: 400;
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 992px) {
+  .chatbox {
+    display: none;
+  }
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--eee-color);
+  padding-bottom: 5px;
+}
+.user-info .user-section {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.user-info .user-section .image {
+  display: flex;
+  align-items: center;
+}
+.user-info .user-section img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user-info .user-data {
+  display: flex;
+  flex-direction: column;
+}
+.user-info .user-data .name {
+  font-size: 12px;
+  font-weight: bold;
+}
+.user-info .user-data .last-seen {
+  font-size: 10px;
+}
+.user-info .user-data .last-seen-online {
+  font-size: 10px;
+  color: rgb(0, 162, 0);
+}
+.user-info .actions {
+  display: flex;
+  gap: 5px;
+}
+.user-info .actions button {
+  font-size: 10px;
+  color: var(--main-color);
+}
+.chat-box {
+  flex: 1;
+  width: 100%;
+  background-color: white;
+}
+.message-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 3px;
+  gap: 3px;
+}
+.message-box button {
+  color: var(--main-color);
+}
+.message-box input {
+  border: none;
+  outline: none;
+  font-size: 12px;
+  flex: 1;
+}
