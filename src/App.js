@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./pages/home/Home";
-import "./app.css"
+// import "./app.css"
 import Topbar from "./components/topbar/topbar";
 
 function App() {
