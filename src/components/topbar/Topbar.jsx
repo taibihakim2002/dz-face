@@ -85,21 +85,21 @@ export default function Topbar({ sideBarToggler }) {
           <img src="/assets/person/1.jpeg" alt="Profile" />
           <div className={`profile-menu ${isProfileMenuOpen ? "active" : ""}`}>
             <ul>
-              <a href="#">
+              <a href="#t">
                 <li>
                   <span href="#">الحساب</span>
                   <AccountCircle />
                 </li>
               </a>
-              <a href="#">
+              <a href="#t">
                 <li>
-                  <span href="#">الاعدادات</span>
+                  <span>الاعدادات</span>
                   <Settings />
                 </li>
               </a>
-              <a href="#">
+              <a href="#t">
                 <li className="logout">
-                  <span href="#e">تسجيل الخروج</span>
+                  <span>تسجيل الخروج</span>
                   <Logout />
                 </li>
               </a>
