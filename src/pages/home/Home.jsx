@@ -100,7 +100,7 @@ const Story = ({ storyImage, userImage, userName }) => {
       </div>
 
       <div className="user">
-        <img src={userImage} alt="photo" />
+        <img src={userImage} alt={userImage} />
         <span>{userName}</span>
       </div>
     </a>
