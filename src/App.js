@@ -2,7 +2,7 @@ import { useState } from "react";
 import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./pages/home/Home";
 // import "./app.css"
-import Topbar from "./components/topbar/topbar";
+import Topbar from "./components/topbar/Topbar";
 
 function App() {
   const [sideBarState, setSideBarState] = useState(false);
